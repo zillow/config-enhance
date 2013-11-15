@@ -2,9 +2,13 @@ language: python
 python:
   - 2.7
 install:
-  - pip install --upgrade setuptools
-  - ls -lha /home/travis/virtualenv/python2.7/lib/python2.7/site-packages/
-  - python bootstrap.py
-  - bin/buildout
+  - curl -O https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.10.tar.gz
+  - tar xvzf virtualenv-1.10.tar.gz
+  - cd virtualenv-1.10
+  - mkdir -p ~/env
+  - python virtualenv.py ~/env/clean2.7 --no-setuptools --no-pip --no-site-packages
+  - cd ..
+  - ~/env/clean2.7/bin/python bootstrap.py
+  - bin/buildout -U
 script:
   - bin/test
