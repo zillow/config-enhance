@@ -1,4 +1,4 @@
-__VERSION__ = "1.2.0"
+__VERSION__ = "1.2.1"
 
 import os
 from setuptools import setup
@@ -8,7 +8,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 # figure out what the install will need
-install_requires = ["setuptools==0.9.8"]
+install_requires = []
 tests_require = ["nose==1.1.2", "nosexcover==1.0.8", "coverage==3.5.2"] + install_requires
 
 setup(
