@@ -20,7 +20,7 @@ setup(
     zip_safe = True,
     license = read("LICENSE"),
     keywords = "zillow",
-    url = "https://stash.zillow.local/projects/LIBS/repos/egg.config-enhance/browse",
+    url = "https://github.com/zillow/config-enhance",
     packages = ['config_enhance'],
     long_description = read('README.md'),
     classifiers=[
