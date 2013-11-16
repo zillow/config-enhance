@@ -16,7 +16,7 @@ setup(
     version = __VERSION__,
     author = "Jonathan Ultis",
     author_email = "jonathanu@zillow.com",
-    description = read("README.md"),
+    description = read("README.rst"),
     zip_safe = True,
     license = read("LICENSE"),
     keywords = "zillow",
