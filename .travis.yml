@@ -2,7 +2,6 @@ language: python
 python:
   - 2.7
 install:
-  - sudo aptitude install pandoc
   - curl -O https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.10.tar.gz
   - tar xvzf virtualenv-1.10.tar.gz
   - cd virtualenv-1.10
